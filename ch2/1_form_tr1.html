@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        table {
+            border: 1px, solid;
+            border-collapse: collapse;
+        }
+
+        button {
+        border: none;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <span style="color: red;">개인회원정보&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;</span>필수입력사항
+        
+        <table>
+            <tbody>
+                <tr>
+                    <td><span style="color: red;">*</span>아이디</td>
+                    <td><input type="text">&nbsp;<button type="button" style="background-color: black;"><span style="color: white;">아이디중복체크</span></button></td>
+                </tr>
+
+                <tr>
+                    <td><span style="color: red;">*</span>비밀번호</td>
+                    <td colspan="2"><input type="text"></td>
+                </tr>
+
+                <tr>
+                    <td><span style="color: red;">*</span>비밀번호확인</td>
+                    <td colspan="2"><input type="text"></td>
+                </tr>
+
+                <tr>
+                    <td></td>
+                    <td colspan="2">
+                        <span style="color: red;">비밀번호는 10-20자 영문자로 시작하고 숫자 또는 영문 대 소문자로 조합된 문자열이어야 합니다.<br>ex&#41;1111, aaaa, AAAA, **** 등 등록 불가합니다.
+                        </span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td></td>
+                    <td colspan="2">
+                        <span style="color: black;">비밀번호를 변경하실 경우에는 비밀번호란과 비밀번호확인란에 변경하시는 번호를 새로 입력하시면 변경됩니다.</span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><span style="color: red;">*</span>이름</td>
+                    <td colspan="2"><input type="text"></td>
+                </tr>
+
+                <tr>
+                    <td><span style="color: red;">*</span>생년월일</td>
+                    <td><input type="text" size="1">년<input type="text" size="1">월<input type="text" size="1">일&nbsp;<input type="radio" name="a">양력<input type="radio" name="a">음력</td>
+                </tr>
+
+                <tr>
+                    <td><span style="color: red;">*</span>이메일</td>
+                    <td><input type="text">&nbsp;<button type="button" style="background-color: black;"><span style="color: white;">이메일중복확인</span></button></td>
+                </tr>
+
+                <tr>
+                    <td rowspan="2">주소</td>
+                    <td><input type="text" size="1">&#40;<input type="text" size="1">-<input type="text" size="1">&#41;&nbsp;<button type="button" style="background-color: black;"><span style="color: white;">우편번호검색</span></button></td>
+                </tr>
+
+                <tr>
+                    <td><input type="text">&nbsp;<input type="text"></td>
+                </tr>
+
+                <tr>
+                    <td rowspan="2"><span style="color: red;">*</span>핸드폰</td>
+                    <td><input type="text" size="1">-<input type="text" size="1">-<input type="text" size="1">&nbsp;<input type="checkbox"><span style="color: blue;">광고성 정보, 이벤트 SMS수신</span></td>
+                </tr>
+
+                <tr>
+                    <td><span style="color: red; font-size: small;">※ 주문 관련 정보 등 주요 안내 사항은 수신 동의 여부에 관계없이 자동 발송됩니다.</span></td>
+                </tr>
+
+                <tr>
+                    <td><span style="color: red;">*</span>전화번호</td>
+                    <td><input type="text" size="1">-<input type="text" size="1">-<input type="text" size="1"></td>
+                </tr>
+            </tbody>
+        </table>
+        <br>
+        <br>
+        &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<button type="button" style="background-color: white;"><span style="color: red;">회원가입</span></button>&nbsp;<button type="button" style="background-color: white;"><span>이전으로</span></button>
+    </form>
+</body>
+</html>
