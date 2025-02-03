@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var a = 10;
+
+        if (a > 20) {
+            alert("a가 크다");
+        } else if (a < 20) {
+            alert("a가 작다");
+        } else {
+            alert("a는 20");
+        }
+
+        a = 30;
+        alert(a > 20 ? "a가 크다" : "a가 작다")
+
+        var engScore = 90;
+
+        if (engScore < 0 || engScore > 100) {
+            alert("잘못된값");
+        } else if (engScore >= 90) {
+            alert("A");
+        } else if (engScore >= 80) {
+            alert("B");
+        } else if (engScore >= 70) {
+            alert("C");
+        } else if (engScore >= 60) {
+            alert("D");
+        } else if (engScore >= 50) {
+            alert("E");
+        } else {
+            alert("F");
+        }
+    </script>
+</body>
+</html>
