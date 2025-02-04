@@ -25,17 +25,76 @@
         if (engScore < 0 || engScore > 100) {
             alert("잘못된값");
         } else if (engScore >= 90) {
-            alert("A");
+            if (engScore >= 97) {
+                alert("A+");
+            } else if (engScore >= 94) {
+                alert("A");
+            } else {
+                alert("A-");
+            }
         } else if (engScore >= 80) {
-            alert("B");
+            if (engScore >= 87) {
+                alert("B+");
+            } else if (engScore >= 84) {
+                alert("B");
+            } else {
+                alert("B-");
+            }
         } else if (engScore >= 70) {
-            alert("C");
+            if (engScore >= 77) {
+                alert("C+");
+            } else if (engScore >= 74) {
+                alert("C");
+            } else {
+                alert("C-");
+            }
         } else if (engScore >= 60) {
-            alert("D");
+            if (engScore >= 67) {
+                alert("D+");
+            } else if (engScore >= 64) {
+                alert("D");
+            } else {
+                alert("D-");
+            }
         } else if (engScore >= 50) {
-            alert("E");
+            if (engScore >= 57) {
+                alert("E+");
+            } else if (engScore >= 54) {
+                alert("E");
+            } else {
+                alert("E-");
+            }
         } else {
             alert("F");
+        }
+
+        var a;  // x축
+        var b;  // y축
+
+        if (a > 0) {
+            if (b > 0) {
+                alert("a,b는 1사분면에 있습니다.");
+            } else if (b < 0) {
+                alert("a,b는 4사분면에 있습니다.");
+            } else {
+                alert("a,b는 1,4사분면에 있습니다.");
+            }
+        } else if (a < 0) {
+            if (b > 0) {
+                alert("a,b는 2사분면에 있습니다.");
+            } else if (b < 0) {
+                alert("a,b는 3사분면에 있습니다.");
+            } else {
+                alert("a,b는 2,3사분면에 있습니다.");
+            }
+        } else {
+            if (b > 0) {
+                alert("a,b는 1,2사분면에 있습니다.");
+            } else if (b < 0) {
+                alert("a,b는 3,4사분면에 있습니다.");
+            } else {
+                alert("a,b는 원점에 있습니다.");
+            }
         }
     </script>
 </body>
