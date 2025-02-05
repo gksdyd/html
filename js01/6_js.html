@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function a() {
+            alert("dfs");
+        }
+        
+        function b(a) {
+            alert(a + "dfs");
+        }
+
+        function c(a, b) {
+            alert(a + " | " + b + "sdf");
+        }
+
+        function d(a, b) {
+            alert(a + " | " + b + "sdf");
+            return b;
+        }
+
+        a();
+        b("fds");
+        c(7, "Tony");
+        alert(d(1, 2));
+
+        function add(a, b) {
+            return a + b;
+        }
+
+        function minus(a, b) {
+            return a - b;
+        }
+        
+        function multi(a, b) {
+            return a * b;
+        }
+
+        function divide(a, b) {
+            if (b != 0) {
+                return a / b;
+            } else {
+                return "warning!!!";
+            }
+        }
+
+        alert(add(10, 20));
+        alert(minus(10, 20));
+        alert(multi(10, 20));
+        alert(divide(10, 20));
+        alert(divide(10, 0));
+    </script>
+</body>
+</html>

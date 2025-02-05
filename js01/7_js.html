@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function locate(x, y) {
+            let str;
+            if (x > 0) {
+                if (y > 0) {
+                    str = "a,b는 1사분면에 있습니다.";
+                } else if (y < 0) {
+                    str = "a,b는 4사분면에 있습니다.";
+                } else {
+                    str = "a,b는 1,4사분면에 있습니다.";
+                }
+            } else if (x < 0) {
+                if (y > 0) {
+                    str = "a,b는 2사분면에 있습니다.";
+                } else if (y < 0) {
+                    str = "a,b는 3사분면에 있습니다.";
+                } else {
+                    str = "a,b는 2,3사분면에 있습니다.";
+                }
+            } else {
+                if (y > 0) {
+                    str = "a,b는 1,2사분면에 있습니다.";
+                } else if (y < 0) {
+                    str = "a,b는 3,4사분면에 있습니다.";
+                } else {
+                    str = "a,b는 원점에 있습니다.";
+                }
+            }
+            return str;
+        }
+        alert(locate(5, 4));
+    </script>
+</body>
+</html>
